@@ -1,39 +1,64 @@
 ---
 import GitHub from "./icons/GitHub.astro"
-import NextJS from "./icons/NextJS.astro"
 import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
+import Java from "./icons/Java.astro"
+import Spring from "./icons/Spring.astro"
+import Jwt from "./icons/Jwt.astro"
+import PostgreSQL from "./icons/PostgreSQL.astro"
+import Laravel from "./icons/Laravel.astro"
+import Postman from "./icons/Postman.astro"
 
 const TAGS = {
-  NEXT: {
-    name: "Next.js",
-    class: "bg-black text-white",
-    icon: NextJS,
+  JAVA: {
+    name: "Java",
+    class: "bg-gray-100 border border-gray-300 text-black dark:bg-white dark:bg-opacity-20 dark:text-white",
+    icon: Java,
   },
-  TAILWIND: {
-    name: "Tailwind CSS",
-    class: "bg-[#003159] text-white",
-    icon: Tailwind,
+  SPRING: {
+    name: "Spring",
+    class: "bg-gray-100 border border-gray-300 text-black dark:bg-white dark:bg-opacity-20 dark:text-white",
+    icon: Spring,
+  },
+  JWT: {
+    name: "JWT",
+    class: "bg-gray-100 border border-gray-300 text-black dark:bg-white dark:bg-opacity-20 dark:text-white",
+    icon: Jwt,
+  },
+  POSTGRES: {
+    name: "PostgreSQL",
+    class: "bg-gray-100 border border-gray-300 text-black dark:bg-white dark:bg-opacity-20 dark:text-white",
+    icon: PostgreSQL,
+  },
+  LARAVEL: {
+    name: "Laravel",
+    class: "bg-gray-100 border border-gray-300 text-black dark:bg-white dark:bg-opacity-20 dark:text-white",
+    icon: Laravel,
+  },
+  POSTMAN: {
+    name: "Postman",
+    class: "bg-gray-100 border border-gray-300 text-black dark:bg-white dark:bg-opacity-20 dark:text-white",
+    icon: Postman,
   },
 }
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "Jwt Aunthenticator - SpringBoot",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
+      "API REST de autenticación de usuarios mediante la utilización de JWT",
     link: "https://svgl.vercel.app/",
     github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    image: "/projects/proyectoJwt.png",
+    tags: [TAGS.JAVA, TAGS.SPRING, TAGS.JWT, TAGS.POSTGRES],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "Laravel API REST - Retos de programación con JavaScript y TypeScript",
     description:
       "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
     link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    image: "/projects/proyectoJwt.png",
+    tags: [TAGS.LARAVEL, TAGS.POSTMAN],
   },
 ]
 ---
