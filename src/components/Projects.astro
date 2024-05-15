@@ -47,16 +47,15 @@ const PROJECTS = [
     title: "Jwt Aunthenticator - SpringBoot",
     description:
       "API REST de autenticación de usuarios mediante la utilización de JWT",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
+    github: "https://github.com/EdTowers1/OpBoot-jwt",
     image: "/projects/proyectoJwt.png",
     tags: [TAGS.JAVA, TAGS.SPRING, TAGS.JWT, TAGS.POSTGRES],
   },
   {
-    title: "Laravel API REST - Retos de programación con JavaScript y TypeScript",
+    title: "Students API REST - Laravel 11",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
+      "API RESTful de gestión de estudiantes implementada en laravel 11, por medio de operaciones CRUD (Crear, Leer, Actualizar, Eliminar) para la administración de estudiantes",
+    github: "https://github.com/EdTowers1/laravel-crud-api",
     image: "/projects/proyectoLaravel.png",
     tags: [TAGS.LARAVEL, TAGS.POSTMAN],
   },
@@ -65,7 +64,7 @@ const PROJECTS = [
 
 <div class="flex flex-col gap-y-16">
   {
-    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+    PROJECTS.map(({ image, title, description, tags, github }) => (
     <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
   <div class="w-full md:w-1/2">
     <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
@@ -100,12 +99,7 @@ const PROJECTS = [
               
             </LinkButton>
           )}
-          {link && (
-            <LinkButton href={link}>
-              <Link class="size-4" />
-              Preview
-            </LinkButton>
-          )}
+          
         </footer>
     </div>
   </div>
